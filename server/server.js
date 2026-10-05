@@ -9,7 +9,7 @@ app.use(function (req, res, next) {
 });
 
 app.get("/health", (req, res) => res.json({ status: "UP" }));
-app.use(express.static("public"));
+app.use(express.static("docs"));
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => {

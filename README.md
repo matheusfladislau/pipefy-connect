@@ -8,7 +8,7 @@ pelo `connect.core.initCCP` do Amazon Connect Streams.
     npm start        # http://localhost:8000
 
 ## Publicar
-1. Hospedar em HTTPS (Docker incluso) e trocar `SEU-DOMINIO` no `public/manifest.json`.
-2. Amazon Connect > instância > Approved origins: adicionar o domínio do app.
-3. Ajustar `instanceURL` e `region` em `public/js/sidebar.js`.
-4. Registrar o app no Pipefy apontando para `https://SEU-DOMINIO/manifest.json`.
+1. GitHub Pages: Settings > Pages > branch `main`, pasta `/docs` (https://matheusfladislau.github.io/pipefy-connect/).
+2. Amazon Connect > instância > Approved origins: adicionar `https://matheusfladislau.github.io`.
+3. Ajustar `instanceURL` e `region` em `docs/js/sidebar.js`.
+4. Registrar o app no Pipefy apontando para `https://matheusfladislau.github.io/pipefy-connect/manifest.json`.
