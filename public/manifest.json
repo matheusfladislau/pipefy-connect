@@ -1,0 +1,11 @@
+{
+    "name": "Amazon Connect CCP",
+    "short_description": "Softphone Amazon Connect no Pipefy",
+    "description": "Painel de contato (CCP) do Amazon Connect dentro do Pipefy",
+    "icon": "https://SEU-DOMINIO/assets/icons/logo.svg",
+    "author": "Build IT Solutions",
+    "init_url": "./",
+    "screenshots": ["https://SEU-DOMINIO/assets/icons/logo.svg"],
+    "features": ["pipe-buttons"],
+    "allow": { "microphone": "true" }
+}

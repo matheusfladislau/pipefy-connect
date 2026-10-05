@@ -1,0 +1,8 @@
+{
+    "name": "pipefy-amazon-connect-app",
+    "version": "1.0.0",
+    "main": "server/server.js",
+    "type": "module",
+    "scripts": { "start": "node server/server.js" },
+    "dependencies": { "express": "^4.18.1" }
+}
