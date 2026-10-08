@@ -2,6 +2,20 @@
 
 var instanceURL = "https://demoadjustit.my.connect.aws/ccp-v2/";
 
+// O Pipefy põe allow="microphone *" no iframe da sidebar só depois de começar a carregá-lo,
+// então a permissão só vale a partir da próxima navegação. Recarrega uma vez para aplicá-la.
+(function ensureMicrophonePolicy() {
+    var policy = document.permissionsPolicy || document.featurePolicy;
+    if (!policy || policy.allowsFeature("microphone")) return;
+    var url = new URL(window.location.href);
+    if (url.searchParams.has("micReload")) {
+        console.warn("microfone continua bloqueado pelo iframe mesmo após recarregar");
+        return;
+    }
+    url.searchParams.set("micReload", "1");
+    window.location.replace(url.toString());
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
     // fora do Pipefy o SDK lança erro (faltam os parâmetros da URL); não deixa isso travar o CCP
     try {
