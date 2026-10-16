@@ -7,5 +7,5 @@
     "init_url": "./",
     "screenshots": ["https://matheusfladislau.github.io/pipefy-connect/assets/icons/logo.svg"],
     "features": ["pipe-buttons"],
-    "allow": { "microphone": "true" }
+    "allow": { "microphone": "true", "camera": "true" }
 }
