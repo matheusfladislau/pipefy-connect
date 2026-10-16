@@ -5,10 +5,7 @@
     "icon": "https://matheusfladislau.github.io/pipefy-connect/assets/icons/logo.svg",
     "author": "Build IT Solutions",
     "init_url": "./",
-    "screenshots": [
-        "https://matheusfladislau.github.io/pipefy-connect/assets/icons/logo.svg"
-    ],
-    "features": [
-        "pipe-buttons"
-    ]
+    "screenshots": ["https://matheusfladislau.github.io/pipefy-connect/assets/icons/logo.svg"],
+    "features": ["pipe-buttons"],
+    "allow": { "microphone": "true", "camera": "true" }
 }
