@@ -3,14 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <style>
-            html, body { margin: 0; height: 100%; }
-            #container-div { width: 100%; height: 100%; }
+            html, body { margin: 0; height: 100%; overflow: hidden; }
         </style>
         <script src="https://platform.staticpipefy.com/pipefy-app.js"></script>
-        <script src="./js/connect-streams-min.js"></script>
         <script src="./js/sidebar.js"></script>
     </head>
     <body>
-        <div id="container-div"></div>
+        <!-- mesma estrutura do app da Genesys: o CCP roda num iframe próprio que repassa as permissões -->
+        <iframe
+            id="softphone"
+            allow="camera *; microphone *; autoplay *; hid *"
+            src="./ccp.html"
+            style="border: none; height: 100%; width: 100%"
+        ></iframe>
     </body>
 </html>
